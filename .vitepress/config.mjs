@@ -1,28 +1,35 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "FXBlog",
   description: "卷 都给我卷",
   themeConfig: {
+    
+    search: {
+      provider: "local",
+    },
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: "脸面", link: "/" },
+      { text: "js", items: [{ text: "this", link: "/js/this" },{ text: "面向对象", link: "/js/oop" }] },
     ],
 
     sidebar: [
       {
-        text: 'Examples',
+        text: "js",
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
+          { text: "this", link: "/js/this" },
+          { text: "面向对象", link: "/js/oop" },
+        ],
+      },
     ],
-
+    outline:{
+      label:"页面导航",
+      level:[2,4]
+    },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
-  }
-})
+      { icon: "github", link: "https://github.com/vuejs/vitepress" },
+    ],
+  },
+});
