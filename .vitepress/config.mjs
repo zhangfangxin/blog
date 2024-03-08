@@ -4,9 +4,9 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   title: "FXBlog",
   description: "卷 都给我卷",
-  head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
+  head: [["link", { rel: "icon", href: "/favicon.ico" }]],
   themeConfig: {
-    logo: '/logo.svg',
+    logo: "/logo.png",
     search: {
       provider: "local",
     },

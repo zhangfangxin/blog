@@ -6,5 +6,8 @@
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview"
+  },
+  "dependencies": {
+    "lottie-web": "^5.12.2"
   }
 }
